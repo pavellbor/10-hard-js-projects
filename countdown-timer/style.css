@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  display: flex;
+  justify-content: flex-end;
+  min-height: 100vh;
+  margin-top: 50px;
+  overflow: hidden;
+
+  font-weight: bold;
+  font-size: 22px;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+
+  background-color: #ffffff;
+  background-image: url("https://images.unsplash.com/photo-1545885370-b9a2330f2afb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+  background-position: center;
+  background-size: cover;
+}
+
+.timer {
+  width: 600px;
+  margin: 20px 100px;
+}
+
+h1 {
+  font-weight: normal;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+table {
+  width: 100%;
+
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+td, th {
+  text-align: center;
+}
+
+td {
+  font-size: 80px;
+}
+
+th {
+  font-weight: normal;
+}
