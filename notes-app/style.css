@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+
+  margin: 0;
+
+  font-weight: normal;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px;
+
+  text-align: center;
+}
+
+.notes__header {
+  margin-bottom: 50px;
+}
+
+.notes__title {
+  font-size: 70px;
+  line-height: 70px;
+  color: transparent;
+
+  background-color: #039a03;
+  text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+}
+
+.notes__button {
+  width: 150px;
+  align-self: flex-end;
+  padding: 10px;
+
+  font: inherit;
+  color:  white;
+
+  background-color: #039a03;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #228e22;
+  outline: none;
+  cursor: pointer;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.notes__button:hover,
+.notes__button:focus {
+  background-color: #05b305;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #228e22;
+}
+
+.notes__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.notes-item {
+  width: 300px;
+  margin: 20px;
+  overflow: hidden;
+
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgb(0 0 0 / 25%);
+}
+
+.notes-item__control {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 15px;
+
+  background-color: rgb(3 154 3 / 2%);
+}
+
+.notes-item__index {
+  margin-right: auto;
+
+  color: #039a03;
+
+  opacity: 0.3;
+}
+
+.notes-item__button {
+  margin-right: 10px;
+
+  font-size: 20px;
+  color: #039a03;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  opacity: 0.6;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.notes-item__button--active {
+  opacity: 1;
+}
+
+.notes-item__button:hover,
+.notes-item__button:focus {
+  outline: none;
+  opacity: 1;
+}
+
+.notes-item__button:last-child {
+  margin-right: 0;
+}
+
+.notes-item__textarea,
+.notes-item__content {
+  display: block;
+  width: 100%;
+  min-height: 200px;
+  margin: 0;
+  padding: 15px;
+
+  font: inherit;
+  text-align: left;
+  color: #505050;
+  white-space: pre-wrap;
+
+  border: none;
+  cursor: text;
+}
+
+.notes-item__textarea[hidden],
+.notes-item__content[hidden] {
+  display: none;
+}
+
+.notes-item__textarea:focus {
+  outline: none;
+}
